@@ -1,0 +1,15 @@
+<div class="container">
+    <h1 class="bg-primary text-white border border-dark mt-2 p-3 rounded-lg">Modification du questionnaire {id}</h1>
+    <form method="POST" action="modifierQuestionnaireBD.html">
+        <input type="hidden" name="idQuestionnaire" value="{id}" />
+        <div class="form-group">
+            <label for="nomQuestionnaire">Nom du questionnaire :</label>
+            <input type="text" class="form-control" id="nomQuestionnaire" name="nomQuestionnaire" placeholder="Entrer le nom du questionnaire" value="{nomQuestionnaire}">
+        </div>
+        <div class="form-group">
+            <label for="descriptionQuestionnaire">Description du questionnaire :</label>
+            <input type="text" class="form-control" id="descriptionQuestionnaire" name="descriptionQuestionnaire" placeholder="descriptio du questionnaire" value="{descriptionQuestionnaire}">
+        </div>
+        <button type="submit" class="btn btn-primary">Valider</button>
+    </form>
+</div>
